@@ -5,10 +5,9 @@ class Solution(object):
         :rtype: int
         """
         
-        list = s.split(" ")
-        if '' in list:
-            list = list.remove('')
-        #list = [' '.join(string.split()) for string in list]
-        print(list)
-        #return len(list[-1])
-        #print(list[-1])
+        list = s.split()
+        
+        if not list:
+            return 0
+
+        return len(list[-1])
