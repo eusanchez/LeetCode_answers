@@ -23,11 +23,26 @@ class Solution:
                     return [i,j]
                 
 
-## Less time excecution example:
+---- SECOND ATTEMPT -----
 
-# class Solution:
-#     def twoSum(self, nums: List[int], target: int) -> List[int]:
-#         for i, x in enumerate(nums):
-#             for j, y in enumerate(nums):
-#                 if (x + y) == target and (i != j):
-#                     return [i, j]
+class Solution(object):
+    def twoSum(self, nums, target):
+        """
+        :type nums: List[int]
+        :type target: int
+        :rtype: List[int]
+        """
+        # lista = nums[:] #copy of a list or with lista=nums.copy()
+        # counter = 0 
+        # for element1 in nums:
+        #     nums.remove(element1)
+        #     counter += 1
+        #     for element2 in nums:
+        #         if (element1 + element2) == target:
+        #             print(element1, element2)
+        #             return [lista.index(element1), nums.index(element2)+counter]
+
+        for i in range(len(nums)):
+            for j in range(i+1, len(nums)):
+                if nums[i] + nums[j] == target:
+                    return [i, j]
