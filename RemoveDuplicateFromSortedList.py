@@ -14,12 +14,12 @@ class Solution(object):
         :rtype: Optional[ListNode]
         """
         current_node = head
-        elemento_actual = head.val
-        elemento_vecino = head.next.val
 
-        while current_node:
-            if elemento_actual == elemento_vecino:
-                head = head.next
-            current_node = current_node.next
-
-
+        while current_node is not None and current_node.next is not None:
+            if current_node.val == current_node.next.val:
+                # remove the duplicate
+                current_node.next = current_node.next.next
+            else:
+                # move forward only if no removal
+                current_node = current_node.next
+        return head
