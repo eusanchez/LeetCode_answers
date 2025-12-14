@@ -15,3 +15,19 @@ class Solution:
         joined.sort()
         #nums1[:] = [x for x in joined if x != 0] #this will remove again the zeros
         nums1[:] = joined
+
+----- SECOND ATTEMPT -------
+
+class Solution(object):
+    def merge(self, nums1, m, nums2, n):
+        """
+        :type nums1: List[int]
+        :type m: int
+        :type nums2: List[int]
+        :type n: int
+        :rtype: None Do not return anything, modify nums1 in-place instead.
+        """
+        result = nums1[:m] + nums2[:n]
+        result.sort()
+        nums1[:] = result
+        
