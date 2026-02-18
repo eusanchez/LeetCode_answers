@@ -20,4 +20,19 @@ class Solution:
 # print(reversed_nums)  # Output: [5, 4, 3, 2, 1]
 
 
+'''Alternative solution
+
+class Solution(object):
+    def isPalindrome(self, s):
+        """
+        :type s: str
+        :rtype: bool
+        """
+        string = ""
+        s = s.lower()
+        for i in s:
+            if (i.isalnum()):
+              string += i
         
+        return string == string[::-1]
+'''        
