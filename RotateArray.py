@@ -16,6 +16,3 @@ class Solution:
             saved = nums[k]
             nums.remove(nums[k])
             nums.append(saved)
-            
-
-            
