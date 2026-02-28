@@ -33,3 +33,18 @@ class Solution(object):
         for element in nums:
             if nums.count(element) == 1:
                 return element
+
+'''Second attempt
+
+class Solution(object):
+    def singleNumber(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        result = 0
+        for x in nums:
+            result ^= x
+        return result
+        
+'''

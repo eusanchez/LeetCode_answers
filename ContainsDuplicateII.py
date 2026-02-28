@@ -14,4 +14,4 @@ class Solution(object):
 
         return False
 
-        
+        # Because dictionaries are meant to be accessed by key, not by numeric index.
