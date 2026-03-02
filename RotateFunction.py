@@ -1,3 +1,7 @@
+
+
+
+'''Works but is not efficient. Time limit exceeded.
 class Solution(object):
     def maxRotateFunction(self, nums):
         """
@@ -20,3 +24,4 @@ class Solution(object):
 
         
         return max(values)
+'''
