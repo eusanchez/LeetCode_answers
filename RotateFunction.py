@@ -1,6 +1,3 @@
-
-
-
 '''Works but is not efficient. Time limit exceeded.
 class Solution(object):
     def maxRotateFunction(self, nums):
